@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "b8935ec6-bb7d-4ac3-992c-e41d44722639",
+		"name": "Houses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Main",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3435/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3435",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Houses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3435/api/houses/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3435",
+					"path": [
+						"api",
+						"houses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "House by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3435/api/house/50a7da42-f041-4233-9ded-84db658fc447",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3435",
+					"path": [
+						"api",
+						"house",
+						"50a7da42-f041-4233-9ded-84db658fc447"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New House",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": \"Jorge\",\r\n    \"zip_code\": \"30\",\r\n    \"lat\": 12349,\r\n    \"long\": 569908\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3435/api/addHouse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3435",
+					"path": [
+						"api",
+						"addHouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update House",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": \"test\",\r\n    \"zip_code\": \"22\",\r\n    \"lat\": 4321,\r\n    \"long\": 569908\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3435/api/updateHouse/50a7da42-f041-4233-9ded-84db658fc447",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3435",
+					"path": [
+						"api",
+						"updateHouse",
+						"50a7da42-f041-4233-9ded-84db658fc447"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete House",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3435/api/deleteHouse/41ad8854-c9f5-4529-b082-8634303d9f35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3435",
+					"path": [
+						"api",
+						"deleteHouse",
+						"41ad8854-c9f5-4529-b082-8634303d9f35"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

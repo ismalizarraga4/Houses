@@ -5,10 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "devt": "set NODE_OPTIONS=--experimental-vm-modules && jest && nodemon index.js",
     "dev": "nodemon index.js",
-    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
+    "start": "node index.js",
+    "devt": "set NODE_OPTIONS=--experimental-vm-modules && jest && nodemon index.js",
+    "devtU": "NODE_OPTIONS=--experimental-vm-modules && jest && nodemon index.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "testU": "NODE_OPTIONS=--experimental-vm-modules && jest"
   },
   "author": "",
   "license": "ISC",
