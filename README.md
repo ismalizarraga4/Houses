@@ -1,7 +1,7 @@
 # Houses
 this is a test CRUD
 
-In this a little API where you can:
+this a little API where you can:
 - see all houses registered
 - see a house registered by ID
 - register a new house 
@@ -34,6 +34,6 @@ In this a little API where you can:
   - open terminal and write next command:
     - npm run test
 
-you can try the API in postman importing collection file, which is in the path
+you can try the API in postman app importing collection file, which is in the path
 \postman\Houses.postman_collection.json, in this project.
 
