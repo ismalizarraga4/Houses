@@ -8,7 +8,7 @@ jobs:
     name: Staging Deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: ismalizarraga4/Houses@v1.0.0
+      - uses: ismalizarraga4/Houses
     run: echo "hola mundo"
     env:
       STAGE: 'staging'
