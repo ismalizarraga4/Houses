@@ -1,0 +1,15 @@
+name: Deploy STAGING DOM IVR
+on:
+  pull_request:
+    types: [closed]
+    branches: [ staging ]
+jobs:
+  deploy:
+    name: Staging Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ismalizarraga4/Houses@v1.0.0
+    run: echo "hola mundo"
+    env:
+      STAGE: 'staging'
+    
