@@ -1,4 +1,4 @@
-name: Deploy STAGING DOM IVR
+name: Deploy STAGING DOM IVR 2
 on:
   pull_request:
     types: [closed]
